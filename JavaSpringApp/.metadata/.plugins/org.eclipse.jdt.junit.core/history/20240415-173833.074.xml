@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CashCardJsonTest.cashCardSerializationTest" project="cashcard" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="springapp.cashcard.CashCardJsonTest" time="1.399" displayname="CashCardJsonTest" uniqueid="[engine:junit-jupiter]/[class:springapp.cashcard.CashCardJsonTest]">
+    <testcase name="cashCardSerializationTest" classname="springapp.cashcard.CashCardJsonTest" time="1.399" displayname="cashCardSerializationTest()" uniqueid="[engine:junit-jupiter]/[class:springapp.cashcard.CashCardJsonTest]/[method:cashCardSerializationTest()]">
+      <error>java.lang.IllegalStateException: Unable to load JSON from class path resource [springapp/cashcard/expected.json]&#13;
+	at org.springframework.boot.test.json.JsonLoader.getJson(JsonLoader.java:85)&#13;
+	at org.springframework.boot.test.json.JsonLoader.getJson(JsonLoader.java:58)&#13;
+	at org.springframework.boot.test.json.JsonContentAssert.isStrictlyEqualToJson(JsonContentAssert.java:208)&#13;
+	at springapp.cashcard.CashCardJsonTest.cashCardSerializationTest(CashCardJsonTest.java:26)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+Caused by: java.io.FileNotFoundException: class path resource [springapp/cashcard/expected.json] cannot be opened because it does not exist&#13;
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215)&#13;
+	at org.springframework.boot.test.json.JsonLoader.getJson(JsonLoader.java:82)&#13;
+	... 6 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,31 @@
+package shreyas.main;
+
+import java.util.Iterator;
+
+public class Fibonacci implements Iterator<long> {
+	
+	public static long[] fibonacciArray(int n) {
+		long[] fibArr = new long[n+1];
+		fibArr[0] = 0;
+		fibArr[1] = 1;
+		
+		for(int i = 2; i <= n; i++) {
+			fibArr[i] = fibArr[i-1] + fibArr[i-2];
+		}
+		
+		return fibArr;
+	}
+
+	@Override
+	public boolean hasNext() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public E next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

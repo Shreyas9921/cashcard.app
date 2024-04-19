@@ -1,0 +1,24 @@
+package shreyas.multithreading;
+
+public class MultiThreading extends Thread {
+	
+	Integer threadNumber;
+	
+	public MultiThreading(int threadNumber) {
+		this.threadNumber = threadNumber;
+	}
+	
+	@Override
+	public void run() {
+		for(int i = 1; i <= 5; i++) {
+			System.out.println("Concurrent Thread execution " + i);
+			
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+

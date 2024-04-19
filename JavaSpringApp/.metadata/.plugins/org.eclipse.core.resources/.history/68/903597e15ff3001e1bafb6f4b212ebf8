@@ -1,0 +1,63 @@
+package shreyas.dsa.efficientsortalgo;
+
+import java.util.*;
+
+public class DsAlgoUtils {
+
+	public static Integer[] numsArr(Integer size) {
+		
+		Random random = new Random();
+		Integer[] numsArr = new Integer[size];
+		
+		for(int i = 0; i < size ; i++) {
+			numsArr[i] = random.nextInt(100);
+		}
+		
+		return numsArr;
+	}
+	
+
+	public static Integer[] quickSort(Integer[] numsArray, Integer lowIndex, Integer highIndex) {
+		
+		if(lowIndex >= highIndex) {
+			return;
+		}
+		Integer pivot = numsArray[highIndex];
+		
+//		System.out.println(pivot);
+		
+		Integer leftTrav = lowIndex;
+		Integer rightTrav = highIndex;
+		
+		while(leftTrav < rightTrav) {
+			while(numsArray[leftTrav] <= pivot && leftTrav < rightTrav) {
+				leftTrav++;
+			}
+			
+			while(numsArray[rightTrav] >= pivot && leftTrav < rightTrav) {
+				rightTrav--;
+			}
+			
+//			if(leftTrav < rightTrav) 
+				swap(numsArray ,leftTrav, rightTrav);
+//			System.out.println("Array after swapping left and right value ::" +Arrays.asList(numsArray));
+		}
+		
+		swap(numsArray, rightTrav, pivot);
+		System.out.println("Array after swapping pivot and right value ::" +Arrays.asList(numsArray));
+		
+		quickSort(numsArray, lowIndex, leftTrav-1);
+		quickSort(numsArray, leftTrav+1, highIndex);
+		
+		return numsArray;
+	}
+	
+	private static void swap(Integer[] numsArray ,Integer leftIndex, Integer rightIndex) {
+		Integer temp;
+		
+		temp = numsArray[leftIndex];
+		numsArray[leftIndex] = numsArray[rightIndex];
+		numsArray[rightIndex] = temp;
+	}
+	
+}

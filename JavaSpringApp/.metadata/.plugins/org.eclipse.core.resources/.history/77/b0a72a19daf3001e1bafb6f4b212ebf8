@@ -1,0 +1,105 @@
+package shreyas.dsa.efficientsortalgo;
+
+import java.util.*;
+
+public class DsAlgoUtils {
+
+	public static Integer[] numsArr(Integer size) {
+		
+		Random random = new Random();
+		Integer[] numsArr = new Integer[size];
+		
+		for(int i = 0; i < size ; i++) {
+			numsArr[i] = random.nextInt(100);
+		}
+		
+		return numsArr;
+	}
+	
+	public static Integer[] partitionQuickSort(Integer[] array, Integer lowIndex, Integer highIndex) {
+		
+		if(lowIndex >= highIndex) {
+			return array;
+		}
+		Integer pivotIndex = partition(array, lowIndex, highIndex);
+		
+		partitionQuickSort(array, lowIndex, pivotIndex-1);
+		partitionQuickSort(array, pivotIndex+1, highIndex);
+		
+		return array;
+	}
+	
+	private static Integer partition(Integer[] array, Integer lowIndex, Integer highIndex) {
+		
+		Integer pivot = array[highIndex];
+		Integer leftTravPtr = lowIndex;
+		Integer rightTravPtr = highIndex-1;
+		
+		while(leftTravPtr <= rightTravPtr) {
+			
+			while(leftTravPtr <= rightTravPtr && array[leftTravPtr] <= pivot) {
+				leftTravPtr++;
+			}
+			
+			while(leftTravPtr <= rightTravPtr && array[rightTravPtr] >= pivot) {
+				rightTravPtr--;
+			}
+			
+			if(leftTravPtr < rightTravPtr) 
+				swap(array, leftTravPtr, rightTravPtr);
+			System.out.println("Array after every consecutive swap ::" +Arrays.asList(array));
+		}
+		System.out.println();
+		swap(array, leftTravPtr, highIndex);
+		System.out.println("Array after every consecutive Partition ::" +Arrays.asList(array));
+		
+		return leftTravPtr;
+	}
+	
+	private static void swap(Integer[] array, Integer leftTravPtr, Integer rightTravPtr) {
+		int temp = array[leftTravPtr];
+		array[leftTravPtr] = array[rightTravPtr];
+		array[rightTravPtr] = temp;
+	}
+	/*
+	public static Integer[] quickSort(Integer[] numsArray, Integer lowIndex, Integer highIndex) {
+		
+		if(lowIndex >= highIndex) {
+			return numsArray;
+		}
+		Integer pivot = numsArray[highIndex];
+				
+		Integer leftTrav = lowIndex;
+		Integer rightTrav = highIndex;
+		
+		while(leftTrav < rightTrav) {
+			while(leftTrav < rightTrav && numsArray[leftTrav] <= pivot) {
+				leftTrav++;
+			}
+			
+			while(leftTrav < rightTrav && numsArray[rightTrav] >= pivot) {
+				rightTrav--;
+			}
+			
+			swap(numsArray ,leftTrav, rightTrav);
+		}
+		
+		swap(numsArray, rightTrav, highIndex);
+		System.out.println("Array after swapping pivot and right value ::" +Arrays.asList(numsArray));
+		
+		quickSort(numsArray, lowIndex, leftTrav-1);
+		quickSort(numsArray, leftTrav+1, highIndex);
+		
+		return numsArray;
+	}
+	
+	private static void swap(Integer[] numsArray ,Integer leftIndex, Integer rightIndex) {
+		Integer temp;
+		
+		temp = numsArray[leftIndex];
+		numsArray[leftIndex] = numsArray[rightIndex];
+		numsArray[rightIndex] = temp;
+	}
+	*/
+	
+}

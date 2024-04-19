@@ -1,0 +1,4 @@
+1713527094400	Move 'expected.json' to 'cashcard'
+1713527146831	Rename package 'springapp.cashcard.cashcard'
+1713527488719	Rename package 'springapp.cashcard.resource'
+1713527516913	Move 'data.sql' to 'resource'

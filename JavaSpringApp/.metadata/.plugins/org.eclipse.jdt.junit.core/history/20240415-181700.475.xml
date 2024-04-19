@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CashCardJsonTest.cashCardSerializationTest" project="cashcard" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="springapp.cashcard.CashCardJsonTest" time="1.472" displayname="CashCardJsonTest" uniqueid="[engine:junit-jupiter]/[class:springapp.cashcard.CashCardJsonTest]">
+    <testcase name="cashCardSerializationTest" classname="springapp.cashcard.CashCardJsonTest" time="1.472" displayname="cashCardSerializationTest()" uniqueid="[engine:junit-jupiter]/[class:springapp.cashcard.CashCardJsonTest]/[method:cashCardSerializationTest()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,10 @@
+package shreyas.collections;
+
+public class CollectionReference {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

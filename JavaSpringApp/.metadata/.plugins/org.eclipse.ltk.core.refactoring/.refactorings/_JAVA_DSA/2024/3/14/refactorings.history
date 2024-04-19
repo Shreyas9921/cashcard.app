@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;shreyas.dsa.practice.DsUtil&apos; to &apos;DsAlgoUtil&apos;&#x0D;&#x0A;- Original project: &apos;_JAVA_DSA&apos;&#x0D;&#x0A;- Original element: &apos;shreyas.dsa.practice.DsUtil&apos;&#x0D;&#x0A;- Renamed element: &apos;shreyas.dsa.practice.DsAlgoUtil&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DsUtil&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;shreyas.dsa.practice{DsUtil.java[DsUtil" matchStrategy="1" name="DsAlgoUtil" qualified="false" references="true" similarDeclarations="true" stamp="1711871849921" textual="false" version="1.0"/>
+</session>

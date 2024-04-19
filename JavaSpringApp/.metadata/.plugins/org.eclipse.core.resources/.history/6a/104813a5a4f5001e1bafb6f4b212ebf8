@@ -1,0 +1,16 @@
+package shreyas.multithreading;
+
+public class MultiThreading extends Thread {
+	
+	Integer threadNumber;
+	
+	public MultiThreading(int threadNumber) {
+		this.threadNumber = threadNumber;
+	}
+	
+	@Override
+	public void run() {
+		System.out.println("Running");
+	}
+}
+

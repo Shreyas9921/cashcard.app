@@ -1,0 +1,16 @@
+package shreyas.matrix;
+
+import java.util.List;
+
+public class MatrixOp {
+	
+	public static List<List<Integer>> rotateMatrix(List<List<Integer>> matrix) {
+		
+		int n = matrix.size();
+		int m = matrix.get(0).size();
+		
+		System.out.println(n + " " + m);
+		
+		return matrix;
+	}
+}

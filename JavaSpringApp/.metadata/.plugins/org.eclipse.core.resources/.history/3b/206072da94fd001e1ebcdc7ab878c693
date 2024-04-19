@@ -1,0 +1,5 @@
+package springapp.cashcard;
+
+record CashCard(Long id, Double amount) {
+	}
+

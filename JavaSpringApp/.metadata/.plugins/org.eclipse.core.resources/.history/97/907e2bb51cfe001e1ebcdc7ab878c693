@@ -1,0 +1,12 @@
+package shreyas.matrix;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrMain {
+	
+	public static void main(String[] arg) {
+		ArrayList<ArrayList<Integer>> matrix = ArrayList<>();
+		
+	}
+}

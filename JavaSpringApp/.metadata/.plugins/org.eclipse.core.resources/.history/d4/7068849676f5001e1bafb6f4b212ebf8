@@ -1,0 +1,18 @@
+package shreyas.main;
+
+import java.util.Random;
+
+public class MainDemo {
+
+	public static void main(String[] args) {
+		Random random = new Random();
+		int n = random.nextInt(25);
+		
+		long[] fibSequence = Fibonacci.fibonacciArray(n);
+		
+        System.out.println("Fibonacci sequence up to " + n + " using dynamic programming approach:");
+        
+        for()
+	}
+
+}

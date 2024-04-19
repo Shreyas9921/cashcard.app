@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CashcardApplicationTests" project="cashcard" tests="2" started="2" failures="2" errors="0" ignored="0">
+  <testsuite name="springapp.cashcard.CashcardApplicationTests" time="2.129" displayname="CashcardApplicationTests" uniqueid="[engine:junit-jupiter]/[class:springapp.cashcard.CashcardApplicationTests]">
+    <testcase name="shouldReturnACashCardWhenDataIsSaved" classname="springapp.cashcard.CashcardApplicationTests" time="2.101" displayname="shouldReturnACashCardWhenDataIsSaved()" uniqueid="[engine:junit-jupiter]/[class:springapp.cashcard.CashcardApplicationTests]/[method:shouldReturnACashCardWhenDataIsSaved()]">
+      <failure>
+        <expected>200 OK</expected>
+        <actual>500 INTERNAL_SERVER_ERROR</actual>
+        org.opentest4j.AssertionFailedError: &#13;
+expected: 200 OK&#13;
+ but was: 500 INTERNAL_SERVER_ERROR&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;
+	at springapp.cashcard.CashcardApplicationTests.shouldReturnACashCardWhenDataIsSaved(CashcardApplicationTests.java:29)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="shouldNotReturnACashCardWithAnUnknownId" classname="springapp.cashcard.CashcardApplicationTests" time="0.027" displayname="shouldNotReturnACashCardWithAnUnknownId()" uniqueid="[engine:junit-jupiter]/[class:springapp.cashcard.CashcardApplicationTests]/[method:shouldNotReturnACashCardWithAnUnknownId()]">
+      <failure>
+        <expected>404 NOT_FOUND</expected>
+        <actual>500 INTERNAL_SERVER_ERROR</actual>
+        org.opentest4j.AssertionFailedError: &#13;
+expected: 404 NOT_FOUND&#13;
+ but was: 500 INTERNAL_SERVER_ERROR&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;
+	at springapp.cashcard.CashcardApplicationTests.shouldNotReturnACashCardWithAnUnknownId(CashcardApplicationTests.java:45)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,5 @@
+package springapp.cashcard;
+
+public class CashCard {
+
+}

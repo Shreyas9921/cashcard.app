@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CashCardJsonTest (1)" project="cashcard" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="springapp.cashcard.CashCardJsonTest" time="1.604" displayname="CashCardJsonTest" uniqueid="[engine:junit-jupiter]/[class:springapp.cashcard.CashCardJsonTest]">
+    <testcase name="cashCardSerializationTest" classname="springapp.cashcard.CashCardJsonTest" time="1.54" displayname="cashCardSerializationTest()" uniqueid="[engine:junit-jupiter]/[class:springapp.cashcard.CashCardJsonTest]/[method:cashCardSerializationTest()]"/>
+    <testcase name="cashCardDesrializationTest" classname="springapp.cashcard.CashCardJsonTest" time="0.059" displayname="cashCardDesrializationTest()" uniqueid="[engine:junit-jupiter]/[class:springapp.cashcard.CashCardJsonTest]/[method:cashCardDesrializationTest()]">
+      <failure>
+        <expected>CashCard[id=99, amount=67.89]</expected>
+        <actual>CashCard[id=99, amount=123.45]</actual>
+        org.opentest4j.AssertionFailedError: &#13;
+expected: CashCard[id=99, amount=67.89]&#13;
+ but was: CashCard[id=99, amount=123.45]&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;
+	at springapp.cashcard.CashCardJsonTest.cashCardDesrializationTest(CashCardJsonTest.java:50)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>
